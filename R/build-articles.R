@@ -157,7 +157,7 @@ build_article <- function(name,
 
   default_data <- list(
     pagetitle = "$title$",
-    opengraph = list(description = "$description$"),
+    opengraph = list(description = "$description$", title = "$package$"),
     source = github_source_links(pkg$github_url, path_rel(input, pkg$src_path)),
     filename = path_file(input)
   )
